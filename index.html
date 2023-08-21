@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSIC2D | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <audio src="good-night-160166.mp3" id="audio" style="display: none;"></audio>
+    <div class="nav">
+      <div class="left-nav">
+        <h2>MUSIC2D</h2>
+        <input type="search" name="search" id="search" placeholder="search for songs, artists">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="right-nav">
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-regular fa-bell"></i>
+        <img src="steptodown.com562632.jpg" alt="">
+      </div>
+    </div>
+    <div class="cont">
+    <div class="right">
+      <div class="rnav-right">
+        <i class="fa-solid fa-house"></i><br>
+        <i class="fa-regular fa-heart"></i><br>
+        <i class="fa-solid fa-music"></i><br>
+        <i class="material-icons">equalizer</i><br>
+        <i class="fa-solid fa-tag"></i><br>
+
+      </div>
+      <div class="rightprt2">
+        <img src="https://cdn.pixabay.com/photo/2020/05/13/18/56/gramophone-5168549_640.jpg" alt="">
+        <div class="title">
+          <h2>The Suffering</h2>
+          <div class="gerne">Classic</div>
+        </div>
+        <div class="leftspan"><span>00:00</span></div>
+        <div class="rightspan"><span>00:00</span></div>
+        <div class="timeline-container">
+          <div class="timeline" id="timeline"></div>
+          <div class="timeline-fill" id="timelineFill"></div>
+      </div>
+        <div class="options">
+          <i class="fa-solid fa-backward-step" id="replay"></i>
+          <i class="fa-solid fa-play" id="play-pause"></i>
+          <i class="fa-solid fa-forward-step"></i>
+        </div>
+      </div>
+    </div>
+    <div class="left">
+      <h1>MUSIC <br> Categories</h1>
+      <div class="cat">
+        <div class="c1" id="c1">classic</div>
+        <div class="c1">90s</div>
+        <div class="c1">New</div>
+        <div class="c1">Instrumental</div>
+        <div class="c1">Modern Playlist</div>
+      </div>
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1489641493513-ba4ee84ccea9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fG11c2ljfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1458560871784-56d23406c091?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2ljfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG11c2ljfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+      </div>
+      <div class="playlist">
+        <h1>Your Playlists (4)</h1>
+        <div class="i1">
+        <img src="https://images.unsplash.com/photo-1495305379050-64540d6ee95d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fG11c2ljfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+        <p>Best of Ed Sheren</p></div> <br>
+        <div class="i2">
+        <img src="https://images.unsplash.com/photo-1495305379050-64540d6ee95d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fG11c2ljfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+        <p>Best of Arijit Singh</p></div>
+      </div>
+    </div>
+  </div></div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

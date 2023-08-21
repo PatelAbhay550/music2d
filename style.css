@@ -1,0 +1,258 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: mainfont;
+  src: url('ARCADECLASSIC.TTF');
+}
+body{
+  width: 100%;
+  font-family: mainfont;
+  background-color: #fff;
+  overflow: hidden;
+}
+.main{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 60px;
+  color: white;
+}
+.left-nav{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+.left-nav h2{
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.left-nav input{
+  padding: 8.6px 150px;
+  text-align: left;
+  background: transparent;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 30px;
+
+}
+.left-nav input::placeholder{
+  color: #fff;
+  text-align: left;
+}
+.left-nav i{
+  position: absolute;
+  left: 27%;
+  /* font-weight: 600; */
+  font-size: 1.3vw;
+  top: 9px;
+}
+.right-nav{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.3vw;
+}
+i{
+  cursor: pointer;
+  color: white;
+}
+.right-nav img{
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+}
+.cont{
+  width: 100%;
+  pad: 0px 30px;
+  height: calc( 100vh - 125px);
+  display: flex;
+}
+.right{
+  width: 50%;
+  position: relative;
+}
+img{
+  object-fit: cover;
+  transition: scale 0.5s ease;
+}
+img:hover{
+  cursor: pointer;
+  scale: 1.01;
+}
+.left{
+  width: 50%;
+  /* background-color: blue; */
+}
+.rnav-right{
+  height: 100%;
+  width: 70px;
+  background-color: #1f1f1f;
+  display: flex;
+  padding: 10px 30px;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.rnav-right i{
+  height: 100%;
+  display: inline;
+  width: 100%;
+  font-size: 1.3vw;
+}
+.rnav-right i:not( .rnav-right i:first-child) {
+  margin-top: -100px; /* Adjust this value as needed */
+}
+.rightprt2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 1%;
+  overflow: hidden;
+  left: 20%;
+}
+.rightprt2 img{
+  width: 400px;
+  border-radius: 20px;
+  transition: scale 0.5s;
+  filter: saturate(0) grayscale(100%);
+  box-shadow: 0px 3px 3px #00000077;
+  height: 300px;
+}
+.rightprt2 img:hover{
+  scale: 1.0141;
+}
+.title{
+  padding-top: 20px;
+}
+.title h2{
+  font-size: 2.853vw;
+  color: #fff;
+  font-weight: 500;
+}
+.gerne{
+  padding: 5px 1px;
+  width: 15%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.timeline-container {
+  position: relative;
+  width: 405px;
+  height: 4px;
+  cursor: pointer;
+  
+  margin-top: 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.timeline-fill {
+  position: absolute;
+  top: 0;
+  border-radius: 870px;
+  left: 0;
+  height: 100%;
+  background-color: aqua;
+}
+.leftspan{
+  position: absolute;
+  top: 84%;
+  color: #fff;
+}
+.rightspan{
+  position: absolute;
+  top: 84%;
+  left: 54%;
+  color: #fff;
+}
+.options{
+  position: absolute;
+  top:89%;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  left: 15%;
+}
+.options i{
+  font-size: 1.83vw;
+}
+.left{
+  color: white;
+}
+.left h1{
+  font-size: 3.8vw;
+  font-weight: 400;
+}
+.cat{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-top: 10px;
+}
+#c1{
+  background-color: #fff;
+  color: #1f1f1f;
+}
+.c1{
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.7vw;
+  border-radius: 20px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  padding: 15px 30x;
+}
+.c1:hover{
+  background-color: #fff;
+  color: #1f1f1f;
+}
+.img{
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding-top: 30px;
+  overflow: scroll;
+  align-items: center;
+  gap: 25px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.img img{
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.playlist img{
+  width: 50px;
+  height: 40px;
+  object-fit: cover;
+}
+.i1,.i2{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.playlist p{
+  font-size: 1.8vw;
+}
